@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>UTS PPB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Intent Android</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Hello GitHub Pages</h1>
+  <div class="container">
+
+    <h1>Belajar Intent Android</h1>
+
+    <!-- BUTTON TELEPHONE -->
+    <button class="btn tel" onclick="showDialPad()">
+      📞 Telephone
+    </button>
+
+    <!-- DIAL PAD -->
+    <div class="dialpad" id="dialpad">
+
+      <!-- TOP MENU -->
+      <div class="top-menu">
+        <p>👤 Create new contact</p>
+        <p>👤 Add to a contact</p>
+      </div>
+
+      <!-- DISPLAY -->
+      <div class="display-box">
+
+        <input 
+          type="text"
+          id="phoneInput"
+          value="0123456789"
+        >
+
+        <button 
+          class="clear-btn"
+          onclick="clearNumber()"
+        >
+          ✖
+        </button>
+
+      </div>
+
+      <!-- KEYPAD -->
+      <div class="keys">
+
+        <button onclick="addNumber('1')">
+          1
+          <span></span>
+        </button>
+
+        <button onclick="addNumber('2')">
+          2
+          <span>ABC</span>
+        </button>
+
+        <button onclick="addNumber('3')">
+          3
+          <span>DEF</span>
+        </button>
+
+        <button onclick="addNumber('4')">
+          4
+          <span>GHI</span>
+        </button>
+
+        <button onclick="addNumber('5')">
+          5
+          <span>JKL</span>
+        </button>
+
+        <button onclick="addNumber('6')">
+          6
+          <span>MNO</span>
+        </button>
+
+        <button onclick="addNumber('7')">
+          7
+          <span>PQRS</span>
+        </button>
+
+        <button onclick="addNumber('8')">
+          8
+          <span>TUV</span>
+        </button>
+
+        <button onclick="addNumber('9')">
+          9
+          <span>WXYZ</span>
+        </button>
+
+        <button onclick="addNumber('*')">
+          *
+        </button>
+
+        <button onclick="addNumber('0')">
+          0
+          <span>+</span>
+        </button>
+
+        <button onclick="addNumber('#')">
+          #
+        </button>
+
+      </div>
+
+      <!-- CALL BUTTON -->
+      <button class="call-btn">
+        📞
+      </button>
+
+    </div>
+
+    <!-- BUTTON BROWSER -->
+    <button class="btn browser" onclick="openBrowser()">
+      🌐 Internet Browser
+    </button>
+
+    <!-- BUTTON ABOUT -->
+    <button class="btn about" onclick="openAbout()">
+      ℹ️ About Application
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

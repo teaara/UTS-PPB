@@ -113,7 +113,7 @@ h1{
 ========================= */
 
 .dialpad{
-    display: none;
+    display: block;
 
     margin-top: 25px;
     padding: 20px;
